@@ -1,12 +1,13 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
 const Layout = () => {
     return (
         <>
             <header className="App-header">
-                <Link to='/'>Home</Link>
-                <Link to='/posts'>Blog</Link>
-                <Link to='/about'>Aboutpage</Link>
+                <CustomLink to='/'>Home</CustomLink>
+                <CustomLink to='/posts'>Blog</CustomLink>
+                <CustomLink to='/about'>Aboutpage</CustomLink>
             </header>
             <main>
                 <Outlet />
