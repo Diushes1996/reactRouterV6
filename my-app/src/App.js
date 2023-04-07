@@ -4,8 +4,8 @@ import Blogpage from './components/Blogpage';
 import Homepage from './components/Homepage';
 import NotFoundPage from './components/Notfoundpage';
 import Layout from './components/Layout';
-
 import './App.css';
+import SinglePage from './components/SinglePage';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path='about' element={<Aboutpage />} />
           <Route path='posts' element={<Blogpage />} />
+          <Route path='posts/:id' element={<SinglePage/>}/>
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>
